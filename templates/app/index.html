@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load socialaccount %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .social-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            background-color: #3b5998;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-btn i {
+            margin-right: 10px;
+        }
+
+        .social-btn:hover {
+            background-color: #344e86;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Register with Social Accounts</h2>
+
+
+    <a href="{% provider_login_url 'google' %}" class="social-btn"><i class="fab fa-google"></i>Register with Google</a>
+
+
+    <a href="#" class="social-btn" style="background-color: #3b5998;"><i class="fab fa-facebook-f"></i>Register with
+        Facebook</a>
+    <a href="{% provider_login_url 'github' %}" class="social-btn" style="background-color: #24292e;"><i class="fab fa-github"></i>Register with GitHub</a>
+    <a href="#" class="social-btn" style="background-color: #405de6;"><i class="fab fa-instagram"></i>Register with
+        Instagram</a>
+    <a href="#" class="social-btn" style="background-color: #0077b5;"><i class="fab fa-linkedin-in"></i>Register with
+        LinkedIn</a>
+    <a href="#" class="social-btn" style="background-color: #2f8cff;"><i class="fab fa-windows"></i>Register with
+        Microsoft</a>
+</div>
+</body>
+</html>
