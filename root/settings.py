@@ -125,19 +125,6 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
-# SOCIALACCOUNT_PROVIDERS = {
-#     'google': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-#         'APP': {
-#             'client_id': '799611644325-fodkjeojub7nini9k0hjihmc4evvhnck.apps.googleusercontent.com',
-#             'secret': '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',
-#             'key': ''
-#         }
-#     }
-# }
-
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'SCOPE': [
